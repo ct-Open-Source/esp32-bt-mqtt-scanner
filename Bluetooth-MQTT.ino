@@ -77,7 +77,7 @@ void loop()
     jsonscanresult = jsonscanresult + "\"" + foundDevices.getDevice(j).getAddress().toString().c_str() + "\":{";
     if (j != foundDevices.getCount() - 1) {
       if (foundDevices.getDevice(j).haveName()) {
-         jsonscanresult = jsonscanresult + "\"name:\"" + foundDevices.getDevice(j).getName().c_str() + "\","; 
+         jsonscanresult = jsonscanresult + "\"name\":\"" + foundDevices.getDevice(j).getName().c_str() + "\","; 
       }
       else jsonscanresult = jsonscanresult + "\"name\":\"\",";
 
@@ -95,7 +95,7 @@ void loop()
     }
     else {
       if (foundDevices.getDevice(j).haveName()) {
-         jsonscanresult = jsonscanresult + "\"name:\"" + foundDevices.getDevice(j).getName().c_str() + "\","; 
+         jsonscanresult = jsonscanresult + "\"name\":\"" + foundDevices.getDevice(j).getName().c_str() + "\","; 
       }
       else jsonscanresult = jsonscanresult + "\"name\":\"\",";
 
