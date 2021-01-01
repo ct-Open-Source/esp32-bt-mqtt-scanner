@@ -21,7 +21,7 @@ const char* ssidkey = ""; // WLAN-Schlüssel
 int scanTime = 10; // Suchzeit
 BLEScan* pBLEScan;
 WiFiClient wclient;
-PubSubClient mqtt(MQTT_server, 1883, wclient);
+PubSubClient mqtt(MQTT_server, MQTT_port, wclient);
  
 void setup()
 {
